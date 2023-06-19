@@ -15,16 +15,24 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "Voyce-${{TEAMSFX_ENV}}",
-        "full": "Voyce Global"
+        "short": "Voyce Test-${{TEAMSFX_ENV}}",
+        "full": "Voyce Global Test"
     },
     "description": {
-        "short": "Voyce Connect Teams App",
-        "full": "Voyce Global Teams App"
+        "short": "Voyce Test Connect Teams App",
+        "full": "Voyce Global Test Teams App"
     },
     "accentColor": "#FFFFFF",
     "bots": [],
     "composeExtensions": [],
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://web.voyceglobal.com/",
+            "canUpdateConfiguration": true,
+            "scopes": ["team", "groupchat"]
+        }
+    ],
+      
     "staticTabs": [
         {
             "entityId": "index0",

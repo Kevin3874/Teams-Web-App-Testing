@@ -25,6 +25,22 @@
     <script type="text/javascript">
       // Hide the loading indicator
       microsoftTeams.appInitialization.notifySuccess();
+
+      // Get the context of where the tab is currently being viewed
+      microsoftTeams.getContext().then((context) => {
+        // Log the group ID to the console
+        console.log("Group ID:" + context.groupId);
+      });
+
+      // Handle the Teams SDK event when the theme changes
+      microsoftTeams.registerOnThemeChangeHandler((theme) => {
+        // Log the current theme to the console
+        console.log("Theme:" + theme);
+      });
+
+      microsoftTeams.getContext(function(context) {
+        console.log("Meeting ID: " + context.meetingId);
+      });
     </script>
   </body>
 </html>
